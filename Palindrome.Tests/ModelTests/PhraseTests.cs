@@ -12,16 +12,15 @@ namespace Palindrome.Tests
     public void PhraseConstructor_CreatesInstanceOfPhrase_Phrase()
 
     {
-      Phrase newPhrase = new Phrase();
+      Phrase newPhrase = new Phrase("Word");
       Assert.AreEqual(typeof(Phrase), newPhrase.GetType());
     }
     [TestMethod]
-    public void PhraseConstructor_CreatesInstanceOfPhrase_String()
-
+    public void ReturnsString_CreatesInstanceOfPhrase_String()
     {
       // Arrange
       string Word = "racecar";
-      Phrase newPhrase = new Phrase("racecar");
+      Phrase newPhrase = new Phrase(Word);
       // Act
       string result = newPhrase.Word;
       // Assert
