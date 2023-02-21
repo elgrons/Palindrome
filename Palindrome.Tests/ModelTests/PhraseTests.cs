@@ -26,5 +26,11 @@ namespace Palindrome.Tests
       Phrase newPhrase = new Phrase();
       Assert.AreEqual(new string("cipe"), newPhrase.IsReversePhraseString(new char[]{'c','i','p','e'}));
     }
+    [TestMethod]
+    public void IsPhrase_BePalindrome_False()
+    {
+      Phrase newPhrase = new Phrase();
+      Assert.AreEqual(false, newPhrase.BePalindrome("epic", "cipe"));
+    }
   }
 }
