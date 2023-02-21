@@ -39,6 +39,5 @@ namespace Palindrome.Tests
       Phrase newPhrase = new Phrase();
       Assert.AreEqual(true, newPhrase.BePalindrome("racecar", "racecar"));
     }
-
   }
 }
