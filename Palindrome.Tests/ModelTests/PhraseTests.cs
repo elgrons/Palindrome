@@ -8,7 +8,7 @@ namespace Palindrome.Tests
   [TestClass]
   public class PhraseTests
   {
-        [TestMethod]
+    [TestMethod]
     public void PhraseConstructor_CreatesInstanceOfPhrase_Phrase()
 
     {
@@ -16,7 +16,7 @@ namespace Palindrome.Tests
       Assert.AreEqual(typeof(Phrase), newPhrase.GetType());
     }
     [TestMethod]
-    public void PhraseConstructor_CreatesInstanceOfPhrase_Phrase()
+    public void PhraseConstructor_CreatesInstanceOfPhrase_String()
 
     {
       // Arrange
