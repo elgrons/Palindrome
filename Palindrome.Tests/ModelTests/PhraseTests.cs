@@ -20,9 +20,11 @@ namespace Palindrome.Tests
       Phrase newPhrase = new Phrase();
       CollectionAssert.AreEqual(new char[]{'c','i','p','e'}, newPhrase.IsReversePhrase(new char[]{'e','p','i','c'}));
     }
-    // [TestMethod]
-    // {
-
-    // }
+    [TestMethod]
+    public void IsPhrase_ReverseItChangeItRearrangeItString_String()
+    {
+      Phrase newPhrase = new Phrase();
+      Assert.AreEqual(new string("cipe"), newPhrase.IsReversePhraseString(new char[]{'c','i','p','e'}));
+    }
   }
 }
