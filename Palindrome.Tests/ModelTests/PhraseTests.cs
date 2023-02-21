@@ -32,5 +32,13 @@ namespace Palindrome.Tests
       Phrase newPhrase = new Phrase();
       Assert.AreEqual(false, newPhrase.BePalindrome("epic", "cipe"));
     }
+    [TestMethod]
+
+    public void IsPhrase_ComparePhraseWord_True()
+    {
+      Phrase newPhrase = new Phrase();
+      Assert.AreEqual(true, newPhrase.BePalindrome("racecar", "racecar"));
+    }
+
   }
 }
