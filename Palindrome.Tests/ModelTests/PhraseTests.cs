@@ -10,22 +10,16 @@ namespace Palindrome.Tests
   {
     [TestMethod]
     public void IsPhrase_StringToChar_Char()
-
     {
       Phrase testPhrase = new Phrase();
       CollectionAssert.AreEqual(new char[]{'e','p','i','c'}, testPhrase.IsPhrase("epic"));
     }
-    // [TestMethod]
-    // public void Phrase_CreatesInstanceOfPhrase_String()
-    // {
-    //   // Arrange
-    //   string Word = "racecar";
-    //   Phrase newPhrase = new Phrase(Word);
-    //   // Act
-    //   string result = newPhrase.Word;
-    //   // Assert
-    //   Assert.AreEqual(Word, result);
-    // }
+    [TestMethod]
+    public void IsPhrase_ReverseItChangeItRearrangeItArray_Reverse()
+    {
+      Phrase newPhrase = new Phrase();
+      CollectionAssert.AreEqual(new char[]{'c','i','p','e'}, newPhrase.IsReversePhrase(new char[]{'e','p','i','c'}));
+    }
     // [TestMethod]
     // {
 
