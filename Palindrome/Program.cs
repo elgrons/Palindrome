@@ -18,7 +18,9 @@ namespace Palindrome
       newPhrase.IsReversePhrase(wordArray);
       string text = newPhrase.IsReversePhraseString(wordArray);
       bool result = newPhrase.BePalindrome(word, text);
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Console.WriteLine("Is " + word + " a palindrome? " + result);
+      Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
     }
   }
 }
