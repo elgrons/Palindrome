@@ -14,9 +14,10 @@ namespace Palindrome
       string word = Console.ReadLine();
       Phrase newPhrase = new Phrase();
       newPhrase.IsPhrase(word);
-      newPhrase.IsReversePhrase(word);
-      newPhrase.IsReversePhraseString(word);
-      bool result = newPhrase.BePalindrome(word, result);
+      char[] wordArray = word.ToCharArray();
+      newPhrase.IsReversePhrase(wordArray);
+      string text = newPhrase.IsReversePhraseString(wordArray);
+      bool result = newPhrase.BePalindrome(word, text);
       Console.WriteLine("Is " + word + " a palindrome? " + result);
     }
   }
